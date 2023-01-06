@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-const appController = require('./src/app/controller/appController')
+const appController = require('./src/app/controllers/appController')
 app.use(express.json())
 
 app.get('/',appController.getUsers)
